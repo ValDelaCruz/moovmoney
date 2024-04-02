@@ -3,39 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../../../../../assets/css/main.css">
     <title>Moov Money</title>
 </head>
 <body>
     <!--GENERAL CONTENT-->
-    <div class="header">
-        <img class="moov-logo" src="../../assets/images/headermoov.svg">
-    </div>
     <div class="title-div">
         <center><p class="title">AUTHENTICATION</p></center>
     </div>
-
+    
     <!--MAIN CONTENT START-->
-    <p class="container" style="text-align: center; color: #474747; font-size:14px; margin-top: 2rem;">We've sent you an SMS code.</p>
-    <p class="container" style="text-align: center; color: #474747; font-size:14px;">To complete the verification process please enter the 6 digit code below.</p>
+    <center> <img src="../../../../../../assets/images/moov.svg" class="full-logo"> </center>
+    <p class="black-title">Enter your MPIN</p>
 
     <!--OTP CODE-->
     <div class="otp-column">
-        <input type="text" class="otp-input" id="input1" oninput="handleInput(this, 2)" maxlength="1">
-        <input type="text" class="otp-input" id="input2" oninput="handleInput(this, 3)" maxlength="1">
-        <input type="text" class="otp-input" id="input3" oninput="handleInput(this, 4)" maxlength="1">
-        <input type="text" class="otp-input" id="input4" oninput="handleInput(this, 5)" maxlength="1">
-        <input type="text" class="otp-input" id="input5" oninput="handleInput(this, 6)" maxlength="1">
-        <input type="text" class="otp-input" id="input6" oninput="handleInput(this, 7)" maxlength="1">
+        <input type="text" class="otp-input" id="input1" oninput="handleInput(this, 2)" maxlength="1" tabindex="1">
+        <input type="text" class="otp-input" id="input2" oninput="handleInput(this, 3)" maxlength="1" tabindex="2">
+        <input type="text" class="otp-input" id="input3" oninput="handleInput(this, 4)" maxlength="1" tabindex="3">
+        <input type="text" class="otp-input" id="input4" oninput="handleInput(this, 5)" maxlength="1" tabindex="4">
     </div>
 
-    <br>
 
     <!-- Fixed footer -->
     <div class="footer" style="font-size: 12px;">
         <div class="footer-col"><p> &nbsp;&nbsp;&nbsp; </p></div>
         <div class="footer-col" id="softkey-center"><p>PROCEED</p></div>
-        <div class="footer-col" id="softkey-right" tabindex="0"  onclick="redirectTo('/views/Invoices/SBEE/PrepayRechargeConfirmation.html')"><p>BACK</p></div>
+        <div class="footer-col" id="softkey-right" tabindex="0"  onclick="redirectTo('/views/My Account/Pin Reset/DELETE/Confirmation.html')"><p>BACK</p></div>
     </div>
     
     <script>
@@ -47,7 +41,7 @@
         // Add event listener to the "PROCEED" button
         document.getElementById('softkey-center').addEventListener('click', function() {
             // Redirect to the next page
-            redirectTo('/views/Invoices/SBEE/PrepayDigitalReceipt.html');
+            redirectTo('/views/My Account/Pin Reset/DELETE/MPIN.html');
         });
         
         // FOR KEYPAD NAVIGATION

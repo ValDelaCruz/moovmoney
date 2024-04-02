@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moov Money</title>
+    <link rel="stylesheet" href="../../../../../assets/css/main.css">
+</head>
+<body>
+     <!--GENERAL CONTENT-->
+     <div class="header">
+        <center><p class="title">PROFILE INFORMATION</p></center>
+    </div>
+
+
+    <svg width="280" height="130" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background Rectangle -->
+        <rect width="170" height="100" x="40" y="15" rx="20" ry="20" fill="#D9D9D9" />
+        
+        <!-- Icon, transformed and scaled to fit, centered relative to the background rectangle -->
+        <g transform="translate(90, 0) scale(0.60)">
+            <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                <path d="M363 891 c-211 -78 -320 -298 -253 -513 37 -119 132 -220 250 -264 62 -24 218 -24 280 0 290 109 363 490 132 698 -21 19 -65 48 -98 63 -79 39 -230 46 -311 16z m197 -178 c68 -40 63 -140 -10 -178 -39 -20 -69 -19 -108 5 -61 37 -69 105 -18 156 39 39 89 45 136 17z m118 -285 c22 -22 14 -72 -16 -101 -77 -74 -247 -74 -323 -1 -31 30 -39 80 -17 102 17 17 339 17 356 0z"/>
+            </g>
+        </g>
+    
+        <!-- Adding text at the bottom center -->
+        <text x="120" y="75" font-family="Open-sans" font-size="12" fill="black" font-weight="bold" text-anchor="middle">ABDUL BAJAR</text>
+        <text x="120" y="95" font-family="Open-sans" font-size="10" fill="black" text-anchor="middle">+27123456789</text>
+    </svg>
+    
+    <!--CONTENT START-->
+
+    <div class="row">
+        <div class="column">
+            <p class="display-title1">Birthdate</p>
+        </div>
+        <div class="column">
+            <p class="display-label1" id="birthdate">January 1, 1987</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <p class="display-title1">Nationality</p>
+        </div>
+        <div class="column">
+            <p class="display-label1" id="nationality">Filipino</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <p class="display-title1" >Current Address</p>
+        </div>
+        <div class="column">
+            <p class="display-label1" id="address" style="text-align: right">B1, L23 Domingo Subdivision, Purok 2 Santa Ana, Manila, Philippines</p>
+        </div>
+    </div>
+
+    <!-- Fixed footer -->
+    <div class="footer" style="font-size: 12px;">
+        <div class="footer-col"><p> &nbsp;&nbsp;&nbsp; </p></div>
+        <div class="footer-col" id="softkey-center" ><p>UPDATE</p></div>
+        <div class="footer-col" id="softkey-right" tabindex="0"  onclick="redirectTo('/views/SendMoney/TowardsMoov/TowardsMoov.html')"><p>BACK</p></div>
+    </div>
+   
+   
+    <!--<div class="container receipt-content">
+        <!--BIRTHDATE--
+        <p style="font-weight: bold; margin-top: 1.5rem; line-height: 0;">Birthdate</p>
+        <p id="amount" style="margin-bottom: 2rem;">January 1, 1987</p>
+        <!--NATIONALITY--
+        <p style="font-weight: bold; margin-top: 2rem; line-height: 0;">Nationality</p>
+        <p id="amount" style="margin-bottom: 2rem;">Filipino</p>
+
+        <!--CURRENT ADDRESS-
+        <p style="font-weight: bold; line-height: 0;">Current Address</p>
+        <p id="total_amount" style="margin-bottom: 2rem;">B1, L23 Domingo Subdivision, Purok 2 Santa Ana, Manila, Philippines</p>
+    </div>-->
+    
+</body>
+</html>
